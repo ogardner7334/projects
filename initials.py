@@ -1,0 +1,92 @@
+import time as t,mcpi.minecraft as minecraft
+mc = minecraft.Minecraft.create()
+
+pos = mc.player.getPos()
+x = pos.x
+y = pos.y
+z = pos.z
+def build_O(x,y,z):
+    mc.setBlocks(x+3,y,z,x+5,y,z,35,15)
+    t.sleep(1)
+    mc.setBlocks(x+2,y+1,z,x+2,y+4,z,35,14)
+    t.sleep(1)
+    mc.setBlocks(x+3,y+5,z,x+5,y+5,z,35,13)
+    t.sleep(1)
+    mc.setBlocks(x+6,y+1,z,x+6,y+4,z,35,12)
+    t.sleep(1)
+    mc.setBlocks(x+3,y,z+1,x+5,y,z+1,35,15)#starts a depth
+    t.sleep(1)
+    mc.setBlocks(x+2,y+1,z+1,x+2,y+4,z+1,35,14)
+    t.sleep(1)
+    mc.setBlocks(x+3,y+5,z+1,x+5,y+5,z+1,35,13)
+    t.sleep(1)
+    mc.setBlocks(x+6,y+1,z+1,x+6,y+4,z+1,35,12)
+    t.sleep(1)
+    mc.setBlocks(x+3,y,z-1,x+5,y,z-1,35,15)#next piece
+    t.sleep(1)
+    mc.setBlocks(x+2,y+1,z-1,x+2,y+4,z-1,35,14)
+    t.sleep(1)
+    mc.setBlocks(x+3,y+5,z-1,x+5,y+5,z-1,35,13)
+    t.sleep(1)
+    mc.setBlocks(x+6,y+1,z-1,x+6,y+4,z-1,35,12)
+
+def build_G(x,y,z):
+    mc.setBlocks(x+9,y,z,x+11,y,z,35,11)
+    t.sleep(1)
+    mc.setBlocks(x+8,y+1,z,x+8,y+4,z,35,10)
+    t.sleep(1)
+    mc.setBlocks(x+9,y+5,z,x+11,y+5,z,35,9)
+    t.sleep(1)
+    mc.setBlock(x+12,y+4,z,35,8)
+    t.sleep(1)
+    mc.setBlocks(x+12,y+1,z,x+12,y+2,z,35,7)
+    t.sleep(1)
+    mc.setBlock(x+11,y+2,z,35,7)
+    t.sleep(1)
+    mc.setBlocks(x+9,y,z+1,x+11,y,z+1,35,11)#starts a depth
+    t.sleep(1)
+    mc.setBlocks(x+8,y+1,z+1,x+8,y+4,z+1,35,10)
+    t.sleep(1)
+    mc.setBlocks(x+9,y+5,z+1,x+11,y+5,z+1,35,9)
+    t.sleep(1)
+    mc.setBlock(x+12,y+4,z+1,35,8)
+    t.sleep(1)
+    mc.setBlocks(x+12,y+1,z+1,x+12,y+2,z+1,35,7)
+    t.sleep(1)
+    mc.setBlock(x+11,y+2,z+1,35,7)
+    t.sleep
+    mc.setBlocks(x+9,y,z-1,x+11,y,z-1,35,11)#starts a depth
+    t.sleep(1)
+    mc.setBlocks(x+8,y+1,z-1,x+8,y+4,z-1,35,10)
+    t.sleep(1)
+    mc.setBlocks(x+9,y+5,z-1,x+11,y+5,z-1,35,9)
+    t.sleep(1)
+    mc.setBlock(x+12,y+4,z-1,35,8)
+    t.sleep(1)
+    mc.setBlocks(x+12,y+1,z-1,x+12,y+2,z-1,35,7)
+    t.sleep(1)
+    mc.setBlock(x+11,y+2,z-1,35,7)
+
+def build_X(x,y,z):
+    mc.setBlocks(x+2,y,z,x+2,y+1,z,35,15)
+    t.sleep(1)
+    mc.setBlocks(x+6,y,z,x+6,y+1,z,35,15)
+    t.sleep(1)
+    mc.setBlock(x+3,y+2,x,35,15)
+    t.sleep(1)
+    mc.setBlock(x+5,y+2,x,35,15)
+    t.sleep(1)
+    mc.setBlock(x+5,y+4,z,35,15)
+    t.sleep(1)
+    mc.setBlock(x+3,y+4,z,35,15)
+    t.sleep(1)
+    mc.setBlock(x+4,y+3,z,35,15)
+    t.sleep(1)
+    mc.setBlocks(x+2,y+5,z,x+2,y+6,z,35,15)
+    t.sleep(1)
+    mc.setBlocks(x+6,y+5,z,x+6,y+6,z,35,15)
+
+
+build_O(x,y,z)
+t.sleep(1)
+build_G(x,y,z)

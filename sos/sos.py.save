@@ -1,0 +1,22 @@
+GPIO.setmode(GPIO.BOARD) #set the pin numbering system
+GPIO.setup(11,GPIO.OUT)
+def Dot():
+	GPIO.output(11,True)
+	t.sleep (0.5)
+	GPIO.output(11,False)
+	t.sleep (1)
+def Dash():
+	GPIO.output(11,True)
+	t.sleep (1.5)
+	GPIO.output(11,False)
+	t.sleep (1)
+GPIO.output(11,False)
+Dot()
+Dot()
+Dot()
+Dash()
+Dash()
+Dash()
+Dot()
+Dot()
+Dot()
